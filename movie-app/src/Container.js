@@ -28,6 +28,11 @@ function Container() {
     gap: "30px",
   };
 
+  const movietitlec1 = { name: "The Elevator", year: "2010" };
+  const movietitlec2 = { name: "Robbery", year: "2019" };
+  const movietitler1 = { name: "Frank Ocean", year: "2024" };
+  const movietitler2 = { name: "Together", year: "2024" };
+
   return (
     <div>
       <header style={styleHeader}>Movie Selection App</header>
@@ -38,8 +43,8 @@ function Container() {
           <Genre
             name="Short Flim"
             description="Movies"
-            title1="The Elevator"
-            title2="Robbery"
+            title1={movietitlec1}
+            title2={movietitlec2}
           />
         </div>
         <div style={styleItem}>
@@ -48,8 +53,8 @@ function Container() {
           <Genre
             name="Short Flim"
             description="Movies"
-            title1="Together"
-            title2="Ocean"
+            title1={movietitler1}
+            title2={movietitler2}
           />
         </div>
       </div>

@@ -36,12 +36,12 @@ function Genre({ description, title1, title2 }) {
       <Card>
         <div style={displayStyle}>
           <div style={itemStyle}>
-            <div>Title: {title1}</div>
-            <Release year="2020" />
+            <div>Title: {title1.name}</div>
+            <Release year={title1.year} />
           </div>
           <div style={itemStyle}>
-            <div>Title: {title2}</div>
-            <Release year="2024" />
+            <div>Title: {title2.name}</div>
+            <Release year={title2.year} />
           </div>
         </div>
       </Card>
